@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illustration - Alison Zhang</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 28px 32px 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        opacity: 0.85;
+        transition: opacity 0.2s ease;
+    }
+
+    .nav a:hover {
+        opacity: 1;
+    }
+
+    .nav a.active {
+        opacity: 1;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 48px 24px 40px;
+    }
+
+    @media (min-width: 1140px) {
+        .container {
+            padding: 56px 40px 48px;
+        }
+    }
+
+    h1 {
+        color: #f0f0f0;
+        font-size: 48px;
+        margin-bottom: 48px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    @media (min-width: 1140px) {
+        h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .image-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .image-container:last-child {
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius:  25px;
+    }
+
+    .image-grid .image-container {
+        aspect-ratio: 1;
+        overflow: hidden;
+    }
+
+    .image-grid .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center bottom;
+    }
+
+    .image-large {
+        max-width: 60%;
+        margin: 0 auto 0 auto;
+        margin-bottom: 0;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 28px;
+        margin-top: 48px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        .image-grid {
+            gap: 40px 28px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .nav {
+            gap: 24px;
+            padding: 24px 20px 28px;
+        }
+
+        .container {
+            padding: 40px 20px 0px;
+        }
+
+        .image-grid {
+            grid-template-columns: 1fr;
+            gap: 40px 0;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+
+        .image-large {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="nav">
+        <a href="Index.html">Work</a>
+        <a href="Illustration.html" class="active">Illustration</a>
+        <a href="About.html">About</a>
+    </nav>
+
+    <div class="container">
+        <h1>Illustration</h1>
+        
+        <div class="image-container image-large">
+            <img src="/img0.gif" alt="Illustration 0">
+        </div>
+
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="/img1.png" alt="Illustration 1">
+            </div>
+            <div class="image-container">
+                <img src="/img2.png" alt="Illustration 2">
+            </div>
+            <div class="image-container">
+                <img src="/img3.png" alt="Illustration 3">
+            </div>
+            <div class="image-container">
+                <img src="/flower.jpg" alt="Flower">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
