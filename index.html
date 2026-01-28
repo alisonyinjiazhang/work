@@ -164,7 +164,9 @@
         }
 
         .container {
-            padding: 32px 20px 32px;
+            padding: 24px 16px 32px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
 
         .date-meta {
@@ -172,30 +174,54 @@
         }
 
         .container > p {
-            margin-bottom: 40px;
+            margin-bottom: 32px;
+            max-width: 100%;
+            padding: 0 4px;
+            box-sizing: border-box;
+            word-wrap: break-word;
         }
 
         .container2 {
             max-width: 100%;
-            gap: 32px 0;
+            gap: 24px 0;
+            padding: 0;
+        }
+
+        .container2 .box {
+            width: 100%;
+            max-width: 100%;
         }
 
         .container2 .box img {
             width: 100%;
-            max-width: 480px;
-            height: 320px;
+            max-width: 100%;
+            height: auto;
+            max-height: 250px;
             object-fit: cover;
         }
 
-        .container2 .box img[src="/work/1.gif"] {
+        .container2 .box img[src="/1.gif"] {
             object-fit: contain;
             object-position: center;
+            max-height: 250px;
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             margin-top: 0;
             margin-bottom: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .txt {
+            font-size: 18px;
+            word-wrap: break-word;
+        }
+
+        .description {
+            font-size: 13px;
+            word-wrap: break-word;
         }
 
         .resume-section {
